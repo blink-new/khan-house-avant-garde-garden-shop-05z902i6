@@ -1,10 +1,11 @@
+import React from 'react';
 import { ArrowLeft, Leaf, Heart, Star } from 'lucide-react'
 
 interface AboutPageProps {
   onBack: () => void
 }
 
-export function AboutPage({ onBack }: AboutPageProps) {
+const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
   return (
     <div className="min-h-screen p-6 md:p-12">
       {/* Header */}
@@ -134,3 +135,5 @@ export function AboutPage({ onBack }: AboutPageProps) {
     </div>
   )
 }
+
+export default AboutPage;

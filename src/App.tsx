@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { InteractiveGarden } from './components/InteractiveGarden'
-import { ProductShop } from './components/ProductShop'
-import { AboutPage } from './components/AboutPage'
+import InteractiveGarden from './components/InteractiveGarden'
+import ProductShop from './components/ProductShop'
+import AboutPage from './components/AboutPage'
 
 function App() {
   const [currentView, setCurrentView] = useState<'garden' | 'shop' | 'about'>('garden')
